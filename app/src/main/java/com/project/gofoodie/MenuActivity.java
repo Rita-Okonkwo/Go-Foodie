@@ -15,7 +15,7 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-
+        // Setting onClickListener for Various Buttons Created
         button = (Button) findViewById(R.id.swallow);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,7 +51,26 @@ public class MenuActivity extends AppCompatActivity {
             }
 
         });
+
+        button = (Button) findViewById(R.id.about);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openabout();
+            }
+
+        });
+
+        button = (Button) findViewById(R.id.contact);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                opencontact();
+            }
+
+        });
     }
+    // Creating Intents for the buttons
     public void openswallow(){
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
@@ -66,6 +85,14 @@ public class MenuActivity extends AppCompatActivity {
     }
     public void opendrinks(){
         Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+    }
+    public void openabout(){
+        Intent intent = new Intent(this, AboutActivity.class);
+        startActivity(intent);
+    }
+    public void opencontact(){
+        Intent intent = new Intent(this, ContactActivity.class);
         startActivity(intent);
     }
 }

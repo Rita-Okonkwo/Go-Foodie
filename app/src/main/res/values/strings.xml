@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">GoFoodie</string>
-    <string name="our_menu">Our Menu</string>
+    <string name="our_menu">MENU</string>
     <string name="swallow">Swallow</string>
     <string name="soup_stew">Soup and Stew</string>
     <string name="drinks">Drinks</string>
     <string name="meat">Meat</string>
+    <string name="logout">Logout</string>
+    <string name="help_information"><![CDATA[Help & Information]]></string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about_us">About Us</string>
 </resources>
