@@ -72,19 +72,19 @@ public class MenuActivity extends AppCompatActivity {
     }
     // Creating Intents for the buttons
     public void openswallow(){
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this, SwallowActivity.class);
         startActivity(intent);
     }
     public void opensoup(){
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this, SoupActivity.class);
         startActivity(intent);
     }
     public void openmeat(){
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this, MeatActivity.class);
         startActivity(intent);
     }
     public void opendrinks(){
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this, DrinkActivity.class);
         startActivity(intent);
     }
     public void openabout(){
