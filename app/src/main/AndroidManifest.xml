@@ -9,17 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MenuActivity"></activity>
-        <activity android:name=".AboutActivity" />
-        <activity android:name=".ContactActivity" />
-        <activity android:name=".SignUp" />
-        <activity android:name=".HomeActivity">
+        <activity android:name=".SignIn"></activity>
+        <!-- I made HomeActivity and set theme to HomeTheme to allow full screen mode -->
+        <!-- Change was made by robin -->
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/HomeTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".ContactActivity" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".MenuActivity"></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
