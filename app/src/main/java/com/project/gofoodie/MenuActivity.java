@@ -53,19 +53,19 @@ public class MenuActivity extends AppCompatActivity {
         });
     }
     public void openswallow(){
-        Intent intent = new Intent(this, swallow.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
     public void opensoup(){
-        Intent intent = new Intent(this, soup.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
     public void openmeat(){
-        Intent intent = new Intent(this, meat.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
     public void opendrinks(){
-        Intent intent = new Intent(this, drinks.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
 }
