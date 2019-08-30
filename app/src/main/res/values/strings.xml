@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">GoFoodie</string>
+    <string name="go_foodie">Go Foodie</string>
+    <string name="delectable_">...delectable and savory meals at your doorstep</string>
+
+
 </resources>

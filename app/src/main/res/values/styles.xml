@@ -8,4 +8,23 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="go_foodie">
+        <item name="android:textSize">
+            64sp
+        </item>
+        <item name="android:textColor">
+            #FDF9F6
+        </item>
+    </style>
+
+
+    <style name="delectable_">
+        <item name="android:textSize">
+            18sp
+        </item>
+        <item name="android:textColor">
+            #FDF9F6
+        </item>
+    </style>
+
 </resources>

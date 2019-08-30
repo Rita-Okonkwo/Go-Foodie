@@ -6,15 +6,72 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:text="I want to eat"
+    <RelativeLayout
+        android:id="@+id/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#19270D"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <TextView
+            android:id="@+id/delectable_"
+            android:layout_width="434dp"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="391dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="293dp"
+            android:gravity="center_horizontal|top"
+            android:paddingTop="20sp"
+            android:text="@string/delectable_"
+            android:textAppearance="@style/delectable_" />
+
+        <TextView
+            android:id="@+id/go_foodie"
+            android:layout_width="379dp"
+            android:layout_height="128dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="304dp"
+            android:layout_marginEnd="-3dp"
+            android:layout_marginBottom="299dp"
+            android:gravity="center"
+            android:text="@string/go_foodie"
+            android:textAppearance="@style/go_foodie" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="547dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="-160dp"
+            android:layout_marginEnd="-159dp"
+            android:layout_marginBottom="344dp"
+            android:contentDescription="TODO"
+            android:rotation="35"
+            app:srcCompat="@drawable/welcome" />
+
+
+    </RelativeLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
