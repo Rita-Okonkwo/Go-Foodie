@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">GoFoodie</string>
+    <string name="go_foodie">Go Foodie</string>
+    <string name="delectable">…delectable and savory meals at your doorstep</string>
+
+
+    =======
     <string name="our_menu">MENU</string>
     <string name="swallow">Swallow</string>
     <string name="soup_stew">Soup and Stew</string>
@@ -9,4 +14,9 @@
     <string name="help_information"><![CDATA[Help & Information]]></string>
     <string name="contact_us">Contact Us</string>
     <string name="about_us">About Us</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="signin_page">SignIn Page</string>
+    <string name="sign_up_page">Sign Up Page</string>
+    >>>>>>> ff9e172440f40de96e9f067ed105ab70b1776e19
 </resources>

@@ -4,17 +4,99 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#19270D"
     tools:context=".HomeActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:text="I want to eat"
+        android:layout_marginStart="112dp"
+        android:rotation="35"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toTopOf="@+id/go_foodie"
+        app:layout_constraintStart_toStartOf="@+id/go_foodie"
+        app:srcCompat="@drawable/food_on_a_leaf"
+        android:contentDescription="@string/go_foodie" />
+
+
+    <TextView
+        android:id="@+id/go_foodie"
+        android:layout_width="381dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="336dp"
+        android:fontFamily="@font/rumraisin"
+        android:gravity="center"
+        android:textSize="64sp"
+        android:textColor="#FDF9F6"
+        android:text="@string/go_foodie"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/delectable_"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_below="@+id/go_foodie"
+        android:layout_alignStart="@+id/go_foodie"
+        android:layout_alignEnd="@+id/go_foodie"
+        android:layout_alignParentBottom="true"
+        android:textSize="18sp"
+        android:textColor="#FDF9F6"
+        android:fontFamily="@font/rumraisin"
+        android:gravity="center_horizontal|top"
+        android:text="@string/delectable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/go_foodie"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/go_foodie"
+        app:layout_constraintTop_toBottomOf="@+id/go_foodie"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/sign_in"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="52dp"
+        android:background="@drawable/sign_in_rounded_wrapper"
+        android:backgroundTint="#ffffff"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/sign_in"
+        android:textColor="#FDF9F6"
+        android:onClick="openSignIn"
+        android:textSize="20sp"
+        android:shadowRadius="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/delectable_"
+        app:layout_constraintTop_toBottomOf="@+id/delectable_" />
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:onClick="openSignUp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/sign_up_rounded"
+        android:backgroundTint="#C15B11"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/sign_up"
+        android:textSize="20sp"
+        android:textColor="#FDF9F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:shadowRadius="4"
+        app:layout_constraintEnd_toEndOf="@+id/delectable_"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toEndOf="@+id/sign_in"
+        app:layout_constraintTop_toBottomOf="@+id/delectable_" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
