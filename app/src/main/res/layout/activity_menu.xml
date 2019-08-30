@@ -6,4 +6,91 @@
     android:layout_height="match_parent"
     tools:context=".MenuActivity">
 
+    <TextView
+        android:id="@+id/Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/rumraisin"
+        android:text="@string/our_menu"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/swallow"
+        android:layout_width="335dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/swallow"
+        android:fontFamily="@font/rumraisin"
+        android:textAlignment="viewStart"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:background="#C15B11"
+        android:paddingLeft="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Menu" />
+
+    <Button
+        android:id="@+id/soup_stew"
+        android:layout_width="335dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="#C15B11"
+        android:fontFamily="@font/rumraisin"
+        android:paddingLeft="12sp"
+        android:text="@string/soup_stew"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swallow" />
+
+    <Button
+        android:id="@+id/meat"
+        android:layout_width="335dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="#C15B11"
+        android:fontFamily="@font/rumraisin"
+        android:paddingLeft="12sp"
+        android:text="@string/meat"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soup_stew" />
+
+    <Button
+        android:id="@+id/drinks"
+        android:layout_width="335dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="#C15B11"
+        android:fontFamily="@font/rumraisin"
+        android:paddingLeft="12sp"
+        android:text="@string/drinks"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meat" />
 </androidx.constraintlayout.widget.ConstraintLayout>
