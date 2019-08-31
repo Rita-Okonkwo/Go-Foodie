@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#19270D"
+    android:background="#FFFFFF"
     tools:context=".SignIn">
 
     <ImageView
@@ -44,7 +44,7 @@
         android:fontFamily="@font/rumraisin"
         android:hint="E-mail Address*"
         android:inputType="textEmailAddress"
-        android:textColorHint="#FDF9F6"
+        android:textColorHint="#000000"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -59,7 +59,7 @@
         android:fontFamily="@font/rumraisin"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textColorHint="#FDF9F6"
+        android:textColorHint="#000000"
         app:layout_constraintEnd_toEndOf="@+id/editText"
         app:layout_constraintStart_toStartOf="@+id/editText"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
@@ -106,4 +106,16 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/signin_btn"
         app:layout_constraintTop_toBottomOf="@+id/signin_btn" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="8dp"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
