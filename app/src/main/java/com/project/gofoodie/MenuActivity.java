@@ -52,6 +52,15 @@ public class MenuActivity extends AppCompatActivity {
 
         });
 
+        button = (Button) findViewById(R.id.snack);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                opensnacks();
+            }
+
+        });
+
         button = (Button) findViewById(R.id.about);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,6 +94,10 @@ public class MenuActivity extends AppCompatActivity {
     }
     public void opendrinks(){
         Intent intent = new Intent(this, DrinkActivity.class);
+        startActivity(intent);
+    }
+    public void opensnacks(){
+        Intent intent = new Intent(this, SnackActivity.class);
         startActivity(intent);
     }
     public void openabout(){

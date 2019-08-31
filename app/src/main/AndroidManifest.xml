@@ -15,6 +15,7 @@
         <activity android:name=".SoupActivity" />
         <activity android:name=".SwallowActivity" />
         <activity android:name=".AboutActivity" />
+        <activity android:name=".SnackActivity"/>
         <activity android:name=".ContactActivity" />
         <activity android:name=".SignUp" android:theme="@style/HomeTheme"></activity>
         <activity android:name=".MenuActivity"></activity>
