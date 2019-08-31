@@ -19,47 +19,44 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class SignUp extends AppCompatActivity {
+import org.w3c.dom.Text;
+
+public class SignIn extends AppCompatActivity {
     EditText email;
     EditText password;
-    FirebaseAuth firebaseAuth;
+    Button btn;
     ProgressBar progressBar;
-    TextView sign_in;
-    Button sign_up;
+    TextView signUp;
+    FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
+        setContentView(R.layout.activity_sign_in);
 
-        //get firebase auth instance
         firebaseAuth = FirebaseAuth.getInstance();
+        email = findViewById(R.id.editText);
+        password = findViewById(R.id.password_in);
+        btn = findViewById(R.id.signin_btn);
+        signUp = findViewById(R.id.textView6);
+        progressBar = findViewById(R.id.progressBar2);
 
-        //get the Id of relevant views
-        email = findViewById(R.id.email_up);
-        password = findViewById(R.id.editText6);
-        progressBar = findViewById(R.id.progressBar);
-        sign_in = findViewById(R.id.signin_up);
-        sign_up = findViewById(R.id.signup_btn);
-
-        //set onclick listener on sign in
-        sign_in.setOnClickListener(new View.OnClickListener() {
+        signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SignIn.class);
+                Intent intent = new Intent(getApplicationContext(), SignUp.class);
                 startActivity(intent);
             }
         });
-        sign_up.setOnClickListener(new View.OnClickListener() {
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                registerUser();
+                signInUser();
             }
         });
     }
 
-    public void registerUser(){
-
+    public void signInUser(){
         String email_reg = email.getText().toString();
         String password_reg = password.getText().toString();
 
@@ -82,13 +79,13 @@ public class SignUp extends AppCompatActivity {
         }
 
         progressBar.setVisibility(View.VISIBLE);
-        firebaseAuth.createUserWithEmailAndPassword(email_reg, password_reg)
+        firebaseAuth.signInWithEmailAndPassword(email_reg, password_reg)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             progressBar.setVisibility(View.GONE);
-                            Intent intent = new Intent(getApplicationContext(), SignIn.class);
+                            Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
                             startActivity(intent);
                         }else{
                             Toast.makeText(getApplicationContext(), task.getException().getMessage(), Toast.LENGTH_SHORT).show();
