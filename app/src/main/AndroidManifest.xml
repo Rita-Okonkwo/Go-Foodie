@@ -17,7 +17,7 @@
         <activity android:name=".MeatActivity" />
         <activity android:name=".SoupActivity" />
         <activity android:name=".SwallowActivity" />
-        <activity android:name=".AboutActivity" />
+        <activity android:name=".AboutActivity"/>
         <activity android:name=".SnackActivity">
         </activity>
         <activity android:name=".ContactActivity" />
