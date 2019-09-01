@@ -20,4 +20,12 @@
     <string name="sign_up_page">Sign Up Page</string>
     >>>>>>> ff9e172440f40de96e9f067ed105ab70b1776e19
     <string name="snacks">SNACKS</string>
+    <string name="sub_total">Sub-Total</string>
+    <string name="shipping_fee">Shipping Fee</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="address">address</string>
+    <string name="name">name</string>
+    <string name="_080xxxxxxxx">080xxxxxxxx</string>
+    <string name="naira">₦</string>
+
 </resources>

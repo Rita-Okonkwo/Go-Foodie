@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.mikhaellopez.circularimageview.CircularImageView;
 import com.project.gofoodie.SnackActivity;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -22,11 +24,11 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.SnackViewH
     ArrayList<String> itemNames;
     ArrayList<String> itemPrice;
     ArrayList<Integer> itemImage;
-    ArrayList<Integer> itemCost;
+    ArrayList<String> itemCost;
 
     Context context;
 
-    public CustomAdapter(Context context, ArrayList<String> itemNames, ArrayList<String> itemPrice, ArrayList<Integer> itemImage, ArrayList<Integer> itemCost) {
+    public CustomAdapter(Context context, ArrayList<String> itemNames, ArrayList<String> itemPrice, ArrayList<Integer> itemImage, ArrayList<String> itemCost) {
         this.context = context;
         this.itemNames = itemNames;
         this.itemPrice = itemPrice;
@@ -44,15 +46,19 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.SnackViewH
     }
 
     @Override
-    public void onBindViewHolder(final SnackViewHolder holder, int position) {
+    public void onBindViewHolder(final SnackViewHolder holder, final int position) {
         // set the data in items
         holder.itemName.setText(itemNames.get(position));
         holder.itemImage.setImageResource(itemImage.get(position));
         holder.itemPrice.setText(itemPrice.get(position));
+        holder.itemCost.setText(itemCost.get(position));
         holder.buyNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(context, CheckoutActivity.class);
+                intent.putExtra("itemPrice", itemPrice.get(position))
+                .putExtra("itemCost", itemCost.get(position));
+                context.startActivity(intent);
             }
         });
 
@@ -68,8 +74,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.SnackViewH
     public class SnackViewHolder extends RecyclerView.ViewHolder {
         // init the item view's
         TextView itemName;
-        ImageView itemImage;
+        CircularImageView itemImage;
         TextView itemPrice;
+        TextView itemCost;
         Button buyNow;
 
         public SnackViewHolder(View itemView) {
@@ -77,7 +84,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.SnackViewH
             // get the reference of item view's
             itemName = (TextView) itemView.findViewById(R.id.itemName);
             itemPrice = (TextView) itemView.findViewById(R.id.itemPrice);
-            itemImage = (ImageView) itemView.findViewById(R.id.itemImage);
+            itemImage = (CircularImageView) itemView.findViewById(R.id.itemImage);
+            itemCost = (TextView) itemView.findViewById(R.id.itemCost);
             buyNow = (Button) itemView.findViewById(R.id.buyNow);
 
         }

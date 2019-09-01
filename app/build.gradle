@@ -29,4 +29,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.github.Flutterwave:rave-android:1.0.39'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.mikhaellopez:circularimageview:3.0.2'
+    implementation 'androidx.cardview:cardview:1.0.0'
 }

@@ -25,14 +25,15 @@
             android:layout_height="wrap_content"
             android:padding="8dp">
 
-            <ImageView
+            <com.mikhaellopez.circularimageview.CircularImageView
                 android:id="@+id/itemImage"
-                android:layout_width="101dp"
-                android:layout_height="66dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:padding="8sp"
+                app:civ_border_color="#C15B11"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -42,8 +43,8 @@
 
             <TextView
                 android:id="@+id/itemName"
-                android:layout_width="103dp"
-                android:layout_height="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="sans-serif"
@@ -51,6 +52,18 @@
                 android:textColor="#040404"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/itemImage" />
+
+            <TextView
+                android:id="@+id/naira1"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/naira"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/itemPrice"
                 app:layout_constraintTop_toBottomOf="@+id/itemImage" />
 
             <TextView
@@ -84,6 +97,17 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/itemPrice"
                 app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/itemCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"/>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

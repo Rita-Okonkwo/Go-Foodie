@@ -24,7 +24,7 @@ public class SnackActivity extends AppCompatActivity {
     ArrayList<String> itemNames = new ArrayList<>(Arrays.asList("Puff Puff", "Egg Roll", "Chin Chin", "Fish Roll","Small Chops", "Cookies","Bread","Pizza"));
     ArrayList<String> itemPrice = new ArrayList<>(Arrays.asList("50","150","200","150","550","450","350","2500"));
     ArrayList<Integer> itemImage = new ArrayList<>(Arrays.asList(R.drawable.image,R.drawable.image,R.drawable.image,R.drawable.image,R.drawable.image,R.drawable.image,R.drawable.image,R.drawable.image));
-    ArrayList<Integer> itemCost = new ArrayList<>(Arrays.asList(50,150,200,150,550,450,350,2500));
+    ArrayList<String> itemCost = new ArrayList<>(Arrays.asList("50","150","200","150","550","450","350","2500"));
 
 
     @Override
