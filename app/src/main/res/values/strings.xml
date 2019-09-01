@@ -18,8 +18,12 @@
     <string name="sign_in">SIGN IN</string>
     <string name="signin_page">SignIn Page</string>
     <string name="sign_up_page">Sign Up Page</string>
+
+    <string name="snacks">SNACKS</string>
+
     <string name="info_text">about_text</string>
     <string name="team">team_mem</string>
     <string name="go_foodieA">Go Foodie</string>
+
 
 </resources>
