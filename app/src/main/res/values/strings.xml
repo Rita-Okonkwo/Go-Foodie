@@ -4,7 +4,7 @@
     <string name="delectable">…delectable and savory meals at your doorstep</string>
 
 
-
+    =======
     <string name="our_menu">MENU</string>
     <string name="swallow">Swallow</string>
     <string name="soup_stew">Soup and Stew</string>
@@ -18,12 +18,17 @@
     <string name="sign_in">SIGN IN</string>
     <string name="signin_page">SignIn Page</string>
     <string name="sign_up_page">Sign Up Page</string>
-
+    >>>>>>> ff9e172440f40de96e9f067ed105ab70b1776e19
     <string name="snacks">SNACKS</string>
-
     <string name="info_text">about_text</string>
     <string name="team">team_mem</string>
     <string name="go_foodieA">Go Foodie</string>
-
+    <string name="sub_total">Sub-Total</string>
+    <string name="shipping_fee">Shipping Fee</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="address">address</string>
+    <string name="name">name</string>
+    <string name="_080xxxxxxxx">080xxxxxxxx</string>
+    <string name="naira">₦</string>
 
 </resources>
