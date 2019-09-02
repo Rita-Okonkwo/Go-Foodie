@@ -30,5 +30,8 @@
     <string name="name">name</string>
     <string name="_080xxxxxxxx">080xxxxxxxx</string>
     <string name="naira">₦</string>
+    <string name="soup">SOUP AND STEW</string>
+    <string name="drink">DRINK</string>
+    <string name="Meat">MEAT</string>
 
 </resources>

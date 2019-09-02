@@ -7,7 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.flutterwave.raveandroid.RaveConstants;
+import com.flutterwave.raveandroid.RavePayActivity;
 import com.flutterwave.raveandroid.RavePayManager;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -76,5 +79,17 @@ public class CheckoutActivity extends AppCompatActivity {
         });
 
         }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == RaveConstants.RAVE_REQUEST_CODE && data != null) {
+            if (resultCode == RavePayActivity.RESULT_SUCCESS) {
+                Toast.makeText(this, "SUCCESS ", Toast.LENGTH_SHORT).show();
+            } else if (resultCode == RavePayActivity.RESULT_ERROR) {
+                Toast.makeText(this, "ERROR ", Toast.LENGTH_SHORT).show();
+            } else if (resultCode == RavePayActivity.RESULT_CANCELLED) {
+                Toast.makeText(this, "CANCELLED ", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
 
 }
