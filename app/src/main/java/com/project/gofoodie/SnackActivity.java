@@ -31,6 +31,8 @@ public class SnackActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_snack);
+
+
         // getting the reference of RecyclerView
         RecyclerView snackView = (RecyclerView) findViewById(R.id.snackView);
         // setting a GridLayoutManager with 2 number of columns , horizontal gravity and false value for reverseLayout to show the items from start to end
