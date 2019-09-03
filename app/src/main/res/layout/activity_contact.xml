@@ -4,52 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/foodieback"
     tools:context=".ContactActivity">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="You Can reach us at any\n                  time!"
-    android:textSize="35dp"
-    android:textColor="@android:color/black"
-    android:fontFamily="sans-serif-medium"
-    android:id="@+id/firstline"
-    android:layout_marginTop="10dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"/>
+
     <TextView
+        android:id="@+id/firstline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/secondline"
-        android:layout_centerHorizontal="true"
-        android:text="          Send us a mail:\nContact@gofoodie.com"
-        android:layout_below="@+id/firstline"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-medium"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:padding="30dp"
+        android:text="You Can reach us at any\n                  time!"
+        android:textColor="@android:color/background_light"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/secondline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstline"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
         android:background="#C15B11"
+        android:fontFamily="sans-serif-medium"
+        android:padding="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="          Send us a mail:\nContact@gofoodie.com"
         android:textColor="@android:color/white"
-        android:textSize="30dp"/>
+        android:textSize="30dp" />
+
     <TextView
+        android:id="@+id/thirdline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OR"
-        android:layout_marginTop="60dp"
-        android:textColor="#C15B11"
-        android:id="@+id/thirdline"
-        android:fontFamily="sans-serif-medium"
         android:layout_below="@+id/secondline"
-        android:textSize="35dp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="OR"
+        android:textColor="#C15B11"
+        android:textSize="35dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/thirdline"
         android:layout_centerHorizontal="true"
-        android:textColor="#C15B11"
-        android:fontFamily="sans-serif-medium"
         android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-medium"
         android:text="        Give Us A Call\n+234 XXX XXX XXXX"
-        android:textSize="35dp"/>
+        android:textColor="#C15B11"
+        android:textSize="35dp" />
 </RelativeLayout>
